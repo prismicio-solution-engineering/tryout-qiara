@@ -3568,6 +3568,1076 @@ type TextSliceVariation = TextSliceDefault;
  *
  */
 export type TextSlice = prismic.SharedSlice<"text", TextSliceVariation>;
+/**
+ * Item in BoxSection → Items
+ *
+ */
+export interface BoxSectionSliceDefaultItem {
+  /**
+   * Title field in *BoxSection → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: box_section.items[].title
+   * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+   *
+   */
+  title: prismic.KeyTextField;
+  /**
+   * Description field in *BoxSection → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: box_section.items[].description
+   * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+   *
+   */
+  description: prismic.KeyTextField;
+  /**
+   * Icon field in *BoxSection → Items*
+   *
+   * - **Field Type**: Select
+   * - **Placeholder**: *None*
+   * - **Default Value**: L
+   * - **API ID Path**: box_section.items[].icon
+   * - **Documentation**: https://prismic.io/docs/core-concepts/select
+   *
+   */
+  icon: prismic.SelectField<"L" | "S" | "D" | "E", "filled">;
+}
+/**
+ * Default variation for BoxSection Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: `Default`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type BoxSectionSliceDefault = prismic.SharedSliceVariation<
+  "default",
+  Record<string, never>,
+  Simplify<BoxSectionSliceDefaultItem>
+>;
+/**
+ * Slice variation for *BoxSection*
+ *
+ */
+type BoxSectionSliceVariation = BoxSectionSliceDefault;
+/**
+ * BoxSection Shared Slice
+ *
+ * - **API ID**: `box_section`
+ * - **Description**: `BoxSection`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type BoxSectionSlice = prismic.SharedSlice<
+  "box_section",
+  BoxSectionSliceVariation
+>;
+/**
+ * Primary content in Carousel → Primary
+ *
+ */
+interface CarouselSliceDefaultPrimary {
+  /**
+   * Titre trustpilot field in *Carousel → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: carousel.primary.titre_trustpilot
+   * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+   *
+   */
+  titre_trustpilot: prismic.KeyTextField;
+  /**
+   * Note trustpilot field in *Carousel → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: carousel.primary.note_trustpilot
+   * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+   *
+   */
+  note_trustpilot: prismic.KeyTextField;
+}
+/**
+ * Item in Carousel → Items
+ *
+ */
+export interface CarouselSliceDefaultItem {
+  /**
+   * Full name field in *Carousel → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: carousel.items[].full_name
+   * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+   *
+   */
+  full_name: prismic.KeyTextField;
+  /**
+   * Title field in *Carousel → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: carousel.items[].title
+   * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+   *
+   */
+  title: prismic.KeyTextField;
+  /**
+   * Description field in *Carousel → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: carousel.items[].description
+   * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+   *
+   */
+  description: prismic.KeyTextField;
+}
+/**
+ * Default variation for Carousel Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: `Default`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type CarouselSliceDefault = prismic.SharedSliceVariation<
+  "default",
+  Simplify<CarouselSliceDefaultPrimary>,
+  Simplify<CarouselSliceDefaultItem>
+>;
+/**
+ * Primary content in Carousel → Primary
+ *
+ */
+interface CarouselSliceWithTitlePrimary {
+  /**
+   * Title field in *Carousel → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: carousel.primary.title
+   * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+   *
+   */
+  title: prismic.KeyTextField;
+  /**
+   * Description field in *Carousel → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: carousel.primary.description
+   * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+   *
+   */
+  description: prismic.KeyTextField;
+}
+/**
+ * Item in Carousel → Items
+ *
+ */
+export interface CarouselSliceWithTitleItem {
+  /**
+   * Title field in *Carousel → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: carousel.items[].title
+   * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+   *
+   */
+  title: prismic.KeyTextField;
+  /**
+   * Image field in *Carousel → Items*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: carousel.items[].image
+   * - **Documentation**: https://prismic.io/docs/core-concepts/image
+   *
+   */
+  image: prismic.ImageField<never>;
+  /**
+   * Link field in *Carousel → Items*
+   *
+   * - **Field Type**: Link
+   * - **Placeholder**: *None*
+   * - **API ID Path**: carousel.items[].link
+   * - **Documentation**: https://prismic.io/docs/core-concepts/link-content-relationship
+   *
+   */
+  link: prismic.LinkField;
+}
+/**
+ * WithTitle variation for Carousel Slice
+ *
+ * - **API ID**: `withTitle`
+ * - **Description**: `Default`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type CarouselSliceWithTitle = prismic.SharedSliceVariation<
+  "withTitle",
+  Simplify<CarouselSliceWithTitlePrimary>,
+  Simplify<CarouselSliceWithTitleItem>
+>;
+/**
+ * Slice variation for *Carousel*
+ *
+ */
+type CarouselSliceVariation = CarouselSliceDefault | CarouselSliceWithTitle;
+/**
+ * Carousel Shared Slice
+ *
+ * - **API ID**: `carousel`
+ * - **Description**: `Carousel`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type CarouselSlice = prismic.SharedSlice<
+  "carousel",
+  CarouselSliceVariation
+>;
+/**
+ * Primary content in HeroBanner → Primary
+ *
+ */
+interface HeroBannerSliceDefaultPrimary {
+  /**
+   * Title field in *HeroBanner → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: hero_banner.primary.title
+   * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+   *
+   */
+  title: prismic.KeyTextField;
+  /**
+   * Description field in *HeroBanner → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: hero_banner.primary.description
+   * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+   *
+   */
+  description: prismic.KeyTextField;
+  /**
+   * Background image field in *HeroBanner → Primary*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: hero_banner.primary.background_image
+   * - **Documentation**: https://prismic.io/docs/core-concepts/image
+   *
+   */
+  background_image: prismic.ImageField<never>;
+}
+/**
+ * Default variation for HeroBanner Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: `Default`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type HeroBannerSliceDefault = prismic.SharedSliceVariation<
+  "default",
+  Simplify<HeroBannerSliceDefaultPrimary>,
+  never
+>;
+/**
+ * Primary content in HeroBanner → Primary
+ *
+ */
+interface HeroBannerSliceWithButtonPrimary {
+  /**
+   * Title field in *HeroBanner → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: hero_banner.primary.title
+   * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+   *
+   */
+  title: prismic.KeyTextField;
+  /**
+   * Description field in *HeroBanner → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: hero_banner.primary.description
+   * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+   *
+   */
+  description: prismic.KeyTextField;
+  /**
+   * Background image field in *HeroBanner → Primary*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: hero_banner.primary.background_image
+   * - **Documentation**: https://prismic.io/docs/core-concepts/image
+   *
+   */
+  background_image: prismic.ImageField<never>;
+  /**
+   * Cta label field in *HeroBanner → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: hero_banner.primary.cta_label
+   * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+   *
+   */
+  cta_label: prismic.KeyTextField;
+  /**
+   * Cta link field in *HeroBanner → Primary*
+   *
+   * - **Field Type**: Link
+   * - **Placeholder**: *None*
+   * - **API ID Path**: hero_banner.primary.cta_link
+   * - **Documentation**: https://prismic.io/docs/core-concepts/link-content-relationship
+   *
+   */
+  cta_link: prismic.LinkField;
+  /**
+   * Cta type field in *HeroBanner → Primary*
+   *
+   * - **Field Type**: Select
+   * - **Placeholder**: *None*
+   * - **API ID Path**: hero_banner.primary.cta_type
+   * - **Documentation**: https://prismic.io/docs/core-concepts/select
+   *
+   */
+  cta_type: prismic.SelectField<"1" | "2">;
+}
+/**
+ * With button variation for HeroBanner Slice
+ *
+ * - **API ID**: `withButton`
+ * - **Description**: `Default`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type HeroBannerSliceWithButton = prismic.SharedSliceVariation<
+  "withButton",
+  Simplify<HeroBannerSliceWithButtonPrimary>,
+  never
+>;
+/**
+ * Primary content in HeroBanner → Primary
+ *
+ */
+interface HeroBannerSliceWithoutDescriptionPrimary {
+  /**
+   * Title field in *HeroBanner → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: hero_banner.primary.title
+   * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+   *
+   */
+  title: prismic.KeyTextField;
+  /**
+   * Background image field in *HeroBanner → Primary*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: hero_banner.primary.background_image
+   * - **Documentation**: https://prismic.io/docs/core-concepts/image
+   *
+   */
+  background_image: prismic.ImageField<never>;
+}
+/**
+ * Without Description variation for HeroBanner Slice
+ *
+ * - **API ID**: `withoutDescription`
+ * - **Description**: `Default`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type HeroBannerSliceWithoutDescription = prismic.SharedSliceVariation<
+  "withoutDescription",
+  Simplify<HeroBannerSliceWithoutDescriptionPrimary>,
+  never
+>;
+/**
+ * Slice variation for *HeroBanner*
+ *
+ */
+type HeroBannerSliceVariation =
+  | HeroBannerSliceDefault
+  | HeroBannerSliceWithButton
+  | HeroBannerSliceWithoutDescription;
+/**
+ * HeroBanner Shared Slice
+ *
+ * - **API ID**: `hero_banner`
+ * - **Description**: `HeroBanner`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type HeroBannerSlice = prismic.SharedSlice<
+  "hero_banner",
+  HeroBannerSliceVariation
+>;
+/**
+ * Primary content in MobileAppSection → Primary
+ *
+ */
+interface MobileAppSectionSliceDefaultPrimary {
+  /**
+   * Title field in *MobileAppSection → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: mobile_app_section.primary.title
+   * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+   *
+   */
+  title: prismic.KeyTextField;
+  /**
+   * Description field in *MobileAppSection → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: mobile_app_section.primary.description
+   * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+   *
+   */
+  description: prismic.KeyTextField;
+  /**
+   * Image field in *MobileAppSection → Primary*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: mobile_app_section.primary.image
+   * - **Documentation**: https://prismic.io/docs/core-concepts/image
+   *
+   */
+  image: prismic.ImageField<never>;
+}
+/**
+ * Item in MobileAppSection → Items
+ *
+ */
+export interface MobileAppSectionSliceDefaultItem {
+  /**
+   * Card title field in *MobileAppSection → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: mobile_app_section.items[].card_title
+   * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+   *
+   */
+  card_title: prismic.KeyTextField;
+  /**
+   * Card description field in *MobileAppSection → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: mobile_app_section.items[].card_description
+   * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+   *
+   */
+  card_description: prismic.KeyTextField;
+  /**
+   * Icon field in *MobileAppSection → Items*
+   *
+   * - **Field Type**: Select
+   * - **Placeholder**: *None*
+   * - **API ID Path**: mobile_app_section.items[].icon
+   * - **Documentation**: https://prismic.io/docs/core-concepts/select
+   *
+   */
+  icon: prismic.SelectField<"1" | "2">;
+}
+/**
+ * Default variation for MobileAppSection Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: `Default`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type MobileAppSectionSliceDefault = prismic.SharedSliceVariation<
+  "default",
+  Simplify<MobileAppSectionSliceDefaultPrimary>,
+  Simplify<MobileAppSectionSliceDefaultItem>
+>;
+/**
+ * Slice variation for *MobileAppSection*
+ *
+ */
+type MobileAppSectionSliceVariation = MobileAppSectionSliceDefault;
+/**
+ * MobileAppSection Shared Slice
+ *
+ * - **API ID**: `mobile_app_section`
+ * - **Description**: `MobileAppSection`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type MobileAppSectionSlice = prismic.SharedSlice<
+  "mobile_app_section",
+  MobileAppSectionSliceVariation
+>;
+/**
+ * Primary content in ProductList → Primary
+ *
+ */
+interface ProductListSliceDefaultPrimary {
+  /**
+   * Title field in *ProductList → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: product_list.primary.title
+   * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+   *
+   */
+  title: prismic.KeyTextField;
+  /**
+   * Description field in *ProductList → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: product_list.primary.description
+   * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+   *
+   */
+  description: prismic.KeyTextField;
+}
+/**
+ * Item in ProductList → Items
+ *
+ */
+export interface ProductListSliceDefaultItem {
+  /**
+   * Image field in *ProductList → Items*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: product_list.items[].image
+   * - **Documentation**: https://prismic.io/docs/core-concepts/image
+   *
+   */
+  image: prismic.ImageField<never>;
+  /**
+   * Title field in *ProductList → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: product_list.items[].title
+   * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+   *
+   */
+  title: prismic.KeyTextField;
+  /**
+   * Description field in *ProductList → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: product_list.items[].description
+   * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+   *
+   */
+  description: prismic.KeyTextField;
+  /**
+   * Link field in *ProductList → Items*
+   *
+   * - **Field Type**: Link
+   * - **Placeholder**: *None*
+   * - **API ID Path**: product_list.items[].link
+   * - **Documentation**: https://prismic.io/docs/core-concepts/link-content-relationship
+   *
+   */
+  link: prismic.LinkField;
+  /**
+   * Code field in *ProductList → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: product_list.items[].code
+   * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+   *
+   */
+  code: prismic.KeyTextField;
+}
+/**
+ * Default variation for ProductList Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: `Default`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type ProductListSliceDefault = prismic.SharedSliceVariation<
+  "default",
+  Simplify<ProductListSliceDefaultPrimary>,
+  Simplify<ProductListSliceDefaultItem>
+>;
+/**
+ * Slice variation for *ProductList*
+ *
+ */
+type ProductListSliceVariation = ProductListSliceDefault;
+/**
+ * ProductList Shared Slice
+ *
+ * - **API ID**: `product_list`
+ * - **Description**: `ProductList`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type ProductListSlice = prismic.SharedSlice<
+  "product_list",
+  ProductListSliceVariation
+>;
+/**
+ * Primary content in SalesPitchSection → Primary
+ *
+ */
+interface SalesPitchSectionSliceDefaultPrimary {
+  /**
+   * Title field in *SalesPitchSection → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: sales_pitch_section.primary.title
+   * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+   *
+   */
+  title: prismic.KeyTextField;
+  /**
+   * Description field in *SalesPitchSection → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: sales_pitch_section.primary.description
+   * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+   *
+   */
+  description: prismic.KeyTextField;
+  /**
+   * Image field in *SalesPitchSection → Primary*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: sales_pitch_section.primary.image
+   * - **Documentation**: https://prismic.io/docs/core-concepts/image
+   *
+   */
+  image: prismic.ImageField<never>;
+  /**
+   * Caption field in *SalesPitchSection → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: sales_pitch_section.primary.caption
+   * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+   *
+   */
+  caption: prismic.KeyTextField;
+}
+/**
+ * Item in SalesPitchSection → Items
+ *
+ */
+export interface SalesPitchSectionSliceDefaultItem {
+  /**
+   * Icon field in *SalesPitchSection → Items*
+   *
+   * - **Field Type**: Color
+   * - **Placeholder**: *None*
+   * - **API ID Path**: sales_pitch_section.items[].icon
+   * - **Documentation**: https://prismic.io/docs/core-concepts/color
+   *
+   */
+  icon: prismic.ColorField;
+  /**
+   * Title field in *SalesPitchSection → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: sales_pitch_section.items[].title
+   * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+   *
+   */
+  title: prismic.KeyTextField;
+  /**
+   * Description field in *SalesPitchSection → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: sales_pitch_section.items[].description
+   * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+   *
+   */
+  description: prismic.KeyTextField;
+}
+/**
+ * Default variation for SalesPitchSection Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: `Default`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type SalesPitchSectionSliceDefault = prismic.SharedSliceVariation<
+  "default",
+  Simplify<SalesPitchSectionSliceDefaultPrimary>,
+  Simplify<SalesPitchSectionSliceDefaultItem>
+>;
+/**
+ * Primary content in SalesPitchSection → Primary
+ *
+ */
+interface SalesPitchSectionSliceWithoutBoxPrimary {
+  /**
+   * Title field in *SalesPitchSection → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: sales_pitch_section.primary.title
+   * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+   *
+   */
+  title: prismic.KeyTextField;
+  /**
+   * Description field in *SalesPitchSection → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: sales_pitch_section.primary.description
+   * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+   *
+   */
+  description: prismic.KeyTextField;
+  /**
+   * Image field in *SalesPitchSection → Primary*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: sales_pitch_section.primary.image
+   * - **Documentation**: https://prismic.io/docs/core-concepts/image
+   *
+   */
+  image: prismic.ImageField<never>;
+  /**
+   * Caption field in *SalesPitchSection → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: sales_pitch_section.primary.caption
+   * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+   *
+   */
+  caption: prismic.KeyTextField;
+}
+/**
+ * Without box variation for SalesPitchSection Slice
+ *
+ * - **API ID**: `withoutBox`
+ * - **Description**: `Default`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type SalesPitchSectionSliceWithoutBox = prismic.SharedSliceVariation<
+  "withoutBox",
+  Simplify<SalesPitchSectionSliceWithoutBoxPrimary>,
+  never
+>;
+/**
+ * Slice variation for *SalesPitchSection*
+ *
+ */
+type SalesPitchSectionSliceVariation =
+  | SalesPitchSectionSliceDefault
+  | SalesPitchSectionSliceWithoutBox;
+/**
+ * SalesPitchSection Shared Slice
+ *
+ * - **API ID**: `sales_pitch_section`
+ * - **Description**: `SalesPitchSection`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type SalesPitchSectionSlice = prismic.SharedSlice<
+  "sales_pitch_section",
+  SalesPitchSectionSliceVariation
+>;
+/**
+ * Primary content in TileSection → Primary
+ *
+ */
+interface TileSectionSliceDefaultPrimary {
+  /**
+   * Direction field in *TileSection → Primary*
+   *
+   * - **Field Type**: Boolean
+   * - **Placeholder**: *None*
+   * - **Default Value**: false
+   * - **API ID Path**: tile_section.primary.direction
+   * - **Documentation**: https://prismic.io/docs/core-concepts/boolean
+   *
+   */
+  direction: prismic.BooleanField;
+  /**
+   * Title field in *TileSection → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: tile_section.primary.title
+   * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+   *
+   */
+  title: prismic.KeyTextField;
+  /**
+   * Description field in *TileSection → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: tile_section.primary.description
+   * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+   *
+   */
+  description: prismic.KeyTextField;
+  /**
+   * Image field in *TileSection → Primary*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: tile_section.primary.image
+   * - **Documentation**: https://prismic.io/docs/core-concepts/image
+   *
+   */
+  image: prismic.ImageField<never>;
+}
+/**
+ * Default variation for TileSection Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: `Default`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type TileSectionSliceDefault = prismic.SharedSliceVariation<
+  "default",
+  Simplify<TileSectionSliceDefaultPrimary>,
+  never
+>;
+/**
+ * Primary content in TileSection → Primary
+ *
+ */
+interface TileSectionSliceWithCtaPrimary {
+  /**
+   * Direction field in *TileSection → Primary*
+   *
+   * - **Field Type**: Boolean
+   * - **Placeholder**: *None*
+   * - **Default Value**: false
+   * - **API ID Path**: tile_section.primary.direction
+   * - **Documentation**: https://prismic.io/docs/core-concepts/boolean
+   *
+   */
+  direction: prismic.BooleanField;
+  /**
+   * Title field in *TileSection → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: tile_section.primary.title
+   * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+   *
+   */
+  title: prismic.KeyTextField;
+  /**
+   * Description field in *TileSection → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: tile_section.primary.description
+   * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+   *
+   */
+  description: prismic.KeyTextField;
+  /**
+   * Image field in *TileSection → Primary*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: tile_section.primary.image
+   * - **Documentation**: https://prismic.io/docs/core-concepts/image
+   *
+   */
+  image: prismic.ImageField<never>;
+  /**
+   * Cta label field in *TileSection → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: tile_section.primary.cta_label
+   * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+   *
+   */
+  cta_label: prismic.KeyTextField;
+  /**
+   * Cta link field in *TileSection → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: tile_section.primary.cta_link
+   * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+   *
+   */
+  cta_link: prismic.KeyTextField;
+}
+/**
+ * With Cta variation for TileSection Slice
+ *
+ * - **API ID**: `withCta`
+ * - **Description**: `Default`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type TileSectionSliceWithCta = prismic.SharedSliceVariation<
+  "withCta",
+  Simplify<TileSectionSliceWithCtaPrimary>,
+  never
+>;
+/**
+ * Slice variation for *TileSection*
+ *
+ */
+type TileSectionSliceVariation =
+  | TileSectionSliceDefault
+  | TileSectionSliceWithCta;
+/**
+ * TileSection Shared Slice
+ *
+ * - **API ID**: `tile_section`
+ * - **Description**: `TileSection`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type TileSectionSlice = prismic.SharedSlice<
+  "tile_section",
+  TileSectionSliceVariation
+>;
+/**
+ * Primary content in WhyArray → Primary
+ *
+ */
+interface WhyArraySliceDefaultPrimary {
+  /**
+   * Title field in *WhyArray → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: why_array.primary.title
+   * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+   *
+   */
+  title: prismic.KeyTextField;
+  /**
+   * Description field in *WhyArray → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: why_array.primary.description
+   * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+   *
+   */
+  description: prismic.KeyTextField;
+  /**
+   * Left column title field in *WhyArray → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: why_array.primary.left_column_title
+   * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+   *
+   */
+  left_column_title: prismic.KeyTextField;
+  /**
+   * Right column title field in *WhyArray → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: why_array.primary.right_column_title
+   * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+   *
+   */
+  right_column_title: prismic.KeyTextField;
+}
+/**
+ * Item in WhyArray → Items
+ *
+ */
+export interface WhyArraySliceDefaultItem {
+  /**
+   * Description field in *WhyArray → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: why_array.items[].description
+   * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+   *
+   */
+  description: prismic.KeyTextField;
+  /**
+   * Left or right field in *WhyArray → Items*
+   *
+   * - **Field Type**: Boolean
+   * - **Placeholder**: *None*
+   * - **Default Value**: false
+   * - **API ID Path**: why_array.items[].left_or_right
+   * - **Documentation**: https://prismic.io/docs/core-concepts/boolean
+   *
+   */
+  left_or_right: prismic.BooleanField;
+}
+/**
+ * Default variation for WhyArray Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: `Default`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type WhyArraySliceDefault = prismic.SharedSliceVariation<
+  "default",
+  Simplify<WhyArraySliceDefaultPrimary>,
+  Simplify<WhyArraySliceDefaultItem>
+>;
+/**
+ * Slice variation for *WhyArray*
+ *
+ */
+type WhyArraySliceVariation = WhyArraySliceDefault;
+/**
+ * WhyArray Shared Slice
+ *
+ * - **API ID**: `why_array`
+ * - **Description**: `WhyArray`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type WhyArraySlice = prismic.SharedSlice<
+  "why_array",
+  WhyArraySliceVariation
+>;
 declare module "@prismicio/client" {
   interface CreateClient {
     (
@@ -3722,6 +4792,54 @@ declare module "@prismicio/client" {
       TextSliceDefault,
       TextSliceVariation,
       TextSlice,
+      BoxSectionSliceDefaultItem,
+      BoxSectionSliceDefault,
+      BoxSectionSliceVariation,
+      BoxSectionSlice,
+      CarouselSliceDefaultPrimary,
+      CarouselSliceDefaultItem,
+      CarouselSliceDefault,
+      CarouselSliceWithTitlePrimary,
+      CarouselSliceWithTitleItem,
+      CarouselSliceWithTitle,
+      CarouselSliceVariation,
+      CarouselSlice,
+      HeroBannerSliceDefaultPrimary,
+      HeroBannerSliceDefault,
+      HeroBannerSliceWithButtonPrimary,
+      HeroBannerSliceWithButton,
+      HeroBannerSliceWithoutDescriptionPrimary,
+      HeroBannerSliceWithoutDescription,
+      HeroBannerSliceVariation,
+      HeroBannerSlice,
+      MobileAppSectionSliceDefaultPrimary,
+      MobileAppSectionSliceDefaultItem,
+      MobileAppSectionSliceDefault,
+      MobileAppSectionSliceVariation,
+      MobileAppSectionSlice,
+      ProductListSliceDefaultPrimary,
+      ProductListSliceDefaultItem,
+      ProductListSliceDefault,
+      ProductListSliceVariation,
+      ProductListSlice,
+      SalesPitchSectionSliceDefaultPrimary,
+      SalesPitchSectionSliceDefaultItem,
+      SalesPitchSectionSliceDefault,
+      SalesPitchSectionSliceWithoutBoxPrimary,
+      SalesPitchSectionSliceWithoutBox,
+      SalesPitchSectionSliceVariation,
+      SalesPitchSectionSlice,
+      TileSectionSliceDefaultPrimary,
+      TileSectionSliceDefault,
+      TileSectionSliceWithCtaPrimary,
+      TileSectionSliceWithCta,
+      TileSectionSliceVariation,
+      TileSectionSlice,
+      WhyArraySliceDefaultPrimary,
+      WhyArraySliceDefaultItem,
+      WhyArraySliceDefault,
+      WhyArraySliceVariation,
+      WhyArraySlice,
     };
   }
 }

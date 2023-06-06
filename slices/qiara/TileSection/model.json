@@ -1,0 +1,80 @@
+{
+  "id": "tile_section",
+  "type": "SharedSlice",
+  "name": "TileSection",
+  "description": "TileSection",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "direction": {
+          "type": "Boolean",
+          "config": {
+            "label": "Direction",
+            "default_value": false,
+            "placeholder_true": "true",
+            "placeholder_false": "false"
+          }
+        },
+        "title": {
+          "type": "Text",
+          "config": { "label": "Title", "placeholder": "" }
+        },
+        "description": {
+          "type": "Text",
+          "config": { "label": "Description", "placeholder": "" }
+        },
+        "image": {
+          "type": "Image",
+          "config": { "label": "Image", "constraint": {}, "thumbnails": [] }
+        }
+      },
+      "items": {}
+    },
+    {
+      "id": "withCta",
+      "name": "With Cta",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "direction": {
+          "type": "Boolean",
+          "config": {
+            "label": "Direction",
+            "default_value": false,
+            "placeholder_true": "true",
+            "placeholder_false": "false"
+          }
+        },
+        "title": {
+          "type": "Text",
+          "config": { "label": "Title", "placeholder": "" }
+        },
+        "description": {
+          "type": "Text",
+          "config": { "label": "Description", "placeholder": "" }
+        },
+        "image": {
+          "type": "Image",
+          "config": { "label": "Image", "constraint": {}, "thumbnails": [] }
+        },
+        "cta_label": {
+          "type": "Text",
+          "config": { "label": "Cta label", "placeholder": "" }
+        },
+        "cta_link": {
+          "type": "Text",
+          "config": { "label": "Cta link", "placeholder": "" }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

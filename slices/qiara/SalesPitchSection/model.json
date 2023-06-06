@@ -1,0 +1,75 @@
+{
+  "id": "sales_pitch_section",
+  "type": "SharedSlice",
+  "name": "SalesPitchSection",
+  "description": "SalesPitchSection",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "title": {
+          "type": "Text",
+          "config": { "label": "Title", "placeholder": "" }
+        },
+        "description": {
+          "type": "Text",
+          "config": { "label": "Description", "placeholder": "" }
+        },
+        "image": {
+          "type": "Image",
+          "config": { "label": "Image", "constraint": {}, "thumbnails": [] }
+        },
+        "caption": {
+          "type": "Text",
+          "config": { "label": "Caption", "placeholder": "" }
+        }
+      },
+      "items": {
+        "icon": {
+          "type": "Color",
+          "config": { "label": "Icon", "placeholder": "" }
+        },
+        "title": {
+          "type": "Text",
+          "config": { "label": "Title", "placeholder": "" }
+        },
+        "description": {
+          "type": "Text",
+          "config": { "label": "Description", "placeholder": "" }
+        }
+      }
+    },
+    {
+      "id": "withoutBox",
+      "name": "Without box",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "title": {
+          "type": "Text",
+          "config": { "label": "Title", "placeholder": "" }
+        },
+        "description": {
+          "type": "Text",
+          "config": { "label": "Description", "placeholder": "" }
+        },
+        "image": {
+          "type": "Image",
+          "config": { "label": "Image", "constraint": {}, "thumbnails": [] }
+        },
+        "caption": {
+          "type": "Text",
+          "config": { "label": "Caption", "placeholder": "" }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

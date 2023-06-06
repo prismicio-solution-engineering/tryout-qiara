@@ -1,0 +1,135 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"title": {
+				"__TYPE__": "FieldContent",
+				"type": "Text",
+				"value": "Control your home anywhere, anytime."
+			},
+			"description": {
+				"__TYPE__": "FieldContent",
+				"type": "Text",
+				"value": "Activation and deactivation of your alarm, temperature, air quality, notifications, history... Designed to be easy and pleasant to use, the app is the ideal driver for your system!"
+			},
+			"image": {
+				"origin": {
+					"id": "main",
+					"url": "https://images.unsplash.com/photo-1591012911207-0dbac31f37da",
+					"width": 4000,
+					"height": 4000
+				},
+				"url": "https://images.unsplash.com/photo-1591012911207-0dbac31f37da",
+				"width": 4000,
+				"height": 4000,
+				"edit": {
+					"zoom": 1,
+					"crop": {
+						"x": 0,
+						"y": 0
+					},
+					"background": "transparent"
+				},
+				"credits": null,
+				"alt": null,
+				"__TYPE__": "ImageContent",
+				"thumbnails": {}
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"card_title",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "Camera"
+						}
+					],
+					[
+						"card_description",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "With just a glance, you know if the system is working. With a simple gesture you activate or deactivate your alarm. But if you prefer the good old method, a keyboard is also available to you."
+						}
+					],
+					[
+						"icon",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "1",
+							"type": "Select"
+						}
+					]
+				]
+			},
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"card_title",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "Live stream"
+						}
+					],
+					[
+						"card_description",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "Full-screen or full-frame images, go back in time, change rooms… in short, become a director (if you want)."
+						}
+					]
+				]
+			},
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"card_title",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "Multiple users"
+						}
+					],
+					[
+						"card_description",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "Add members to your household, manage permission levels…with great power comes great responsibility, remember 😉"
+						}
+					]
+				]
+			},
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"card_title",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "Alerts"
+						}
+					],
+					[
+						"card_description",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "In the event of an intrusion alert, at a glance, you decide what to do... or not, and we take care of everything. We are here for that !"
+						}
+					]
+				]
+			}
+		]
+	}
+]

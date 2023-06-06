@@ -1,0 +1,110 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"title": {
+				"__TYPE__": "FieldContent",
+				"type": "Text",
+				"value": "Pourquoi choisir Qiara ?"
+			},
+			"description": {
+				"__TYPE__": "FieldContent",
+				"type": "Text",
+				"value": "Avec Qiara, pas de contrat inextricable ni d’installation coûteuse par des professionnels : notre service est sans engagement, et le système s’installe aussi facilement qu’il s’utilise au quotidien avec son app intuitive. L’idée est de vous simplifier la vie, pas de la compliquer."
+			},
+			"left_column_title": {
+				"__TYPE__": "FieldContent",
+				"type": "Text",
+				"value": "Les entreprises traditionnelles"
+			},
+			"right_column_title": {
+				"__TYPE__": "FieldContent",
+				"type": "Text",
+				"value": "Qiara"
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"description",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "Pack produits vendu en moyenne 600€ avec un abonnement de 50€/mois"
+						}
+					],
+					[
+						"left_or_right",
+						{
+							"__TYPE__": "BooleanContent",
+							"value": false
+						}
+					]
+				]
+			},
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"description",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "Pack produits vendu 99€ avec un abonnement à partir de 9,99€/mois"
+						}
+					],
+					[
+						"left_or_right",
+						{
+							"__TYPE__": "BooleanContent",
+							"value": true
+						}
+					]
+				]
+			},
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"description",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "Des offres de prix opaques"
+						}
+					],
+					[
+						"left_or_right",
+						{
+							"__TYPE__": "BooleanContent",
+							"value": false
+						}
+					]
+				]
+			},
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"description",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "Des prix justes et transparents"
+						}
+					],
+					[
+						"left_or_right",
+						{
+							"__TYPE__": "BooleanContent",
+							"value": true
+						}
+					]
+				]
+			}
+		]
+	}
+]

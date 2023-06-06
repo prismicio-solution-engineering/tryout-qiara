@@ -1,0 +1,148 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "withoutBox",
+		"primary": {
+			"title": {
+				"__TYPE__": "FieldContent",
+				"type": "Text",
+				"value": "Une installation en toute autonomie."
+			},
+			"description": {
+				"__TYPE__": "FieldContent",
+				"type": "Text",
+				"value": "Notre service client est à votre disposition pour vous permettre d'installer en toute simplicité votre système, et à tout moment si vous avez des questions."
+			},
+			"image": {
+				"origin": {
+					"id": "main",
+					"url": "https://images.unsplash.com/photo-1515378960530-7c0da6231fb1",
+					"width": 5616,
+					"height": 3744
+				},
+				"url": "https://images.unsplash.com/photo-1515378960530-7c0da6231fb1",
+				"width": 5616,
+				"height": 3744,
+				"edit": {
+					"zoom": 1,
+					"crop": {
+						"x": 0,
+						"y": 0
+					},
+					"background": "transparent"
+				},
+				"credits": null,
+				"alt": null,
+				"__TYPE__": "ImageContent",
+				"thumbnails": {}
+			},
+			"caption": {
+				"__TYPE__": "FieldContent",
+				"type": "Text",
+				"value": "Nos produits ont été conçus pour être installés très simplement sans outil et en toute autonomie. Plus besoin de l’intervention contraignante d’un professionnel."
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": []
+			}
+		]
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"title": {
+				"__TYPE__": "FieldContent",
+				"type": "Text",
+				"value": "Votre vie est privée et doit le rester."
+			},
+			"description": {
+				"__TYPE__": "FieldContent",
+				"type": "Text",
+				"value": "Nous avons mis le meilleur de la technologie au service du respect absolu de votre vie privée."
+			},
+			"image": {
+				"origin": {
+					"id": "main",
+					"url": "https://images.unsplash.com/photo-1601933973783-43cf8a7d4c5f",
+					"width": 6597,
+					"height": 4398
+				},
+				"url": "https://images.unsplash.com/photo-1601933973783-43cf8a7d4c5f",
+				"width": 6597,
+				"height": 4398,
+				"edit": {
+					"zoom": 1,
+					"crop": {
+						"x": 0,
+						"y": 0
+					},
+					"background": "transparent"
+				},
+				"credits": null,
+				"alt": null,
+				"__TYPE__": "ImageContent",
+				"thumbnails": {}
+			},
+			"caption": {
+				"__TYPE__": "FieldContent",
+				"type": "Text",
+				"value": "Caméra qui se ferme automatiquement quand vous êtes chez vous, micro qui se coupe électriquement, chiffrement et authentification de vos données, cloud sécurisé, données stockées en Europe..."
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"icon",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "#9bcb7e",
+							"type": "Color"
+						}
+					],
+					[
+						"title",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "Toujours actif"
+						}
+					],
+					[
+						"description",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "En cas de panne de réseau ou de courant, notre alarme est équipé d'un système qui permet de maintenir votre alarme fonctionnelle."
+						}
+					]
+				]
+			},
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"title",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "Mises à jour régulières"
+						}
+					],
+					[
+						"description",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "Parce que nous développons nous-mêmes notre système et nos produits, nous les faisons évoluer et assurons une maintenance en continu pour vous offrir un système toujours à la pointe."
+						}
+					]
+				]
+			}
+		]
+	}
+]

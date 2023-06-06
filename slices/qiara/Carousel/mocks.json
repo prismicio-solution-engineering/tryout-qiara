@@ -1,0 +1,219 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"note_trustpilot": {
+				"__TYPE__": "FieldContent",
+				"type": "Text",
+				"value": "4,8 sur Trustpilot"
+			},
+			"titre_trustpilot": {
+				"__TYPE__": "FieldContent",
+				"type": "Text",
+				"value": "Des clients satisfaits"
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"title",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "Un service transparent"
+						}
+					],
+					[
+						"full_name",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "Geoffrey s"
+						}
+					],
+					[
+						"description",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "J'ai découvert les produits Qiara grâce à un article dans la presse. Afin de mieux comprendre cette nouvelle offre et de m'assurer de la qualité du service, j'ai décidé d'appeler leur service client."
+						}
+					]
+				]
+			},
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"full_name",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "Geoffrey s"
+						}
+					],
+					[
+						"title",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "Un service transparent"
+						}
+					],
+					[
+						"description",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "J'ai découvert les produits Qiara grâce à un article dans la presse. Afin de mieux comprendre cette nouvelle offre et de m'assurer de la qualité du service, j'ai décidé d'appeler leur service client."
+						}
+					]
+				]
+			}
+		]
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "withTitle",
+		"primary": {
+			"title": {
+				"__TYPE__": "FieldContent",
+				"type": "Text",
+				"value": "Ils parlent de nous"
+			},
+			"description": {
+				"__TYPE__": "FieldContent",
+				"type": "Text",
+				"value": "Nous avons pris un soin tout particulier à développer des produits qui vous servent au quotidien et dont nous sommes très fiers. Voici ce qu’en disent les médias."
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"title",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "Télésurveillance : Qiara, la nouvelle alarme connectée, casse les prix"
+						}
+					],
+					[
+						"image",
+						{
+							"origin": {
+								"id": "main",
+								"url": "https://images.unsplash.com/photo-1607582278043-57198ac8da43",
+								"width": 4024,
+								"height": 4024
+							},
+							"url": "https://images.unsplash.com/photo-1607582278043-57198ac8da43?rect=1590%2C1157%2C1341%2C1341&w=4024&h=4024",
+							"width": 4024,
+							"height": 4024,
+							"edit": {
+								"zoom": 3,
+								"crop": {
+									"x": 1590,
+									"y": 1157
+								},
+								"background": "transparent"
+							},
+							"credits": null,
+							"alt": null,
+							"__TYPE__": "ImageContent",
+							"thumbnails": {}
+						}
+					],
+					[
+						"link",
+						{
+							"__TYPE__": "LinkContent",
+							"value": {
+								"__TYPE__": "ExternalLink",
+								"url": "https://slicemachine.dev"
+							}
+						}
+					]
+				]
+			},
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"title",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "Qiara, l'alarme connectée qui veut bousculer le marché de la télésurveillance."
+						}
+					],
+					[
+						"image",
+						{
+							"__TYPE__": "ImageContent",
+							"url": "https://images.unsplash.com/photo-1590674024477-78ed53e8699e?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw0fHxMZSUyMHBhcmlzaWVufGVufDB8fHx8MTY4NjA0MzI3M3ww&ixlib=rb-4.0.3&q=85",
+							"origin": {
+								"id": "5Fyn6P1oilQ",
+								"url": "https://images.unsplash.com/photo-1590674024477-78ed53e8699e?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw0fHxMZSUyMHBhcmlzaWVufGVufDB8fHx8MTY4NjA0MzI3M3ww&ixlib=rb-4.0.3&q=85",
+								"width": 4000,
+								"height": 2806
+							},
+							"width": 4000,
+							"height": 2806,
+							"edit": {
+								"background": "transparent",
+								"zoom": 1,
+								"crop": {
+									"x": 0,
+									"y": 0
+								}
+							},
+							"thumbnails": {}
+						}
+					]
+				]
+			},
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"title",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "Qiara is a new home security service for the French market."
+						}
+					],
+					[
+						"image",
+						{
+							"__TYPE__": "ImageContent",
+							"url": "https://images.unsplash.com/photo-1619566636858-adf3ef46400b?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw3fHxmcnVpdHxlbnwwfHx8fDE2ODU5NjU3NTd8MA&ixlib=rb-4.0.3&q=85",
+							"origin": {
+								"id": "5JQH9Iqnm9o",
+								"url": "https://images.unsplash.com/photo-1619566636858-adf3ef46400b?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw3fHxmcnVpdHxlbnwwfHx8fDE2ODU5NjU3NTd8MA&ixlib=rb-4.0.3&q=85",
+								"width": 4608,
+								"height": 3072
+							},
+							"width": 4608,
+							"height": 3072,
+							"edit": {
+								"background": "transparent",
+								"zoom": 1,
+								"crop": {
+									"x": 0,
+									"y": 0
+								}
+							},
+							"thumbnails": {}
+						}
+					]
+				]
+			}
+		]
+	}
+]
