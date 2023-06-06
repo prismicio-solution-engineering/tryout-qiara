@@ -49,7 +49,7 @@
 		"primary": {
 			"direction": {
 				"__TYPE__": "BooleanContent",
-				"value": true
+				"value": false
 			},
 			"title": {
 				"__TYPE__": "FieldContent",

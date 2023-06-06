@@ -16,9 +16,9 @@
           "type": "Boolean",
           "config": {
             "label": "Direction",
-            "default_value": false,
-            "placeholder_true": "true",
-            "placeholder_false": "false"
+            "placeholder_false": "Left",
+            "placeholder_true": "Right",
+            "default_value": false
           }
         },
         "title": {
@@ -48,9 +48,9 @@
           "type": "Boolean",
           "config": {
             "label": "Direction",
-            "default_value": false,
-            "placeholder_true": "true",
-            "placeholder_false": "false"
+            "placeholder_false": "Left",
+            "placeholder_true": "Right",
+            "default_value": false
           }
         },
         "title": {

@@ -4,6 +4,7 @@ import { createClient } from "@/prismicio";
 import { Content } from "@prismicio/client";
 import { SliceZone } from "@prismicio/react";
 import { components } from "@/slices/marketing";
+import { components as componentsQiara } from "@/slices/qiara";
 import { getLanguages } from "@/utils/getLanguages";
 import MarketingLayout from "@/components/MarketingLayout";
 
@@ -15,6 +16,7 @@ export default function Home({
   footer,
   languages,
 }: HomePageProps) {
+  console.log(page.data.slices)
   return (
     <>
       <Head>
@@ -31,7 +33,9 @@ export default function Home({
         footer={footer.data}
         languages={languages}
       >
-        <SliceZone slices={page.data.slices} components={components} />
+        <div className="flex flex-col items-center pt-12 md:pt-12 lg:pt-12 xl:pt-24 pb-24 md:pb-32 lg:pb-40 gap-20 md:gap-32 lg:gap-40">
+          <SliceZone slices={page.data.slices} components={{...components, ...componentsQiara}} />
+        </div>
       </MarketingLayout>
     </>
   );
