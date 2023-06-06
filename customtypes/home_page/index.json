@@ -18,7 +18,15 @@
             "hero": { "type": "SharedSlice" },
             "logo_cloud": { "type": "SharedSlice" },
             "testimonials": { "type": "SharedSlice" },
-            "text": { "type": "SharedSlice" }
+            "text": { "type": "SharedSlice" },
+            "why_array": { "type": "SharedSlice" },
+            "product_list": { "type": "SharedSlice" },
+            "sales_pitch_section": { "type": "SharedSlice" },
+            "tile_section": { "type": "SharedSlice" },
+            "mobile_app_section": { "type": "SharedSlice" },
+            "hero_banner": { "type": "SharedSlice" },
+            "carousel": { "type": "SharedSlice" },
+            "box_section": { "type": "SharedSlice" }
           }
         }
       }

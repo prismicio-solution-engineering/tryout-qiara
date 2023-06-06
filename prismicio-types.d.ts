@@ -777,7 +777,15 @@ type HomePageDocumentDataSlicesSlice =
   | HeroSlice
   | LogoCloudSlice
   | TestimonialsSlice
-  | TextSlice;
+  | TextSlice
+  | WhyArraySlice
+  | ProductListSlice
+  | SalesPitchSectionSlice
+  | TileSectionSlice
+  | MobileAppSectionSlice
+  | HeroBannerSlice
+  | CarouselSlice
+  | BoxSectionSlice;
 /**
  * Item in Home Page → Social Cards - Facebook & Twitter
  *
@@ -901,7 +909,15 @@ type LandingPageDocumentDataSlicesSlice =
   | FormSlice
   | TestimonialsSlice
   | FeaturesSlice
-  | HeroSlice;
+  | HeroSlice
+  | BoxSectionSlice
+  | CarouselSlice
+  | HeroBannerSlice
+  | MobileAppSectionSlice
+  | TileSectionSlice
+  | SalesPitchSectionSlice
+  | ProductListSlice
+  | WhyArraySlice;
 /**
  * Item in Landing Page → Social Cards - Facebook & Twitter
  *
