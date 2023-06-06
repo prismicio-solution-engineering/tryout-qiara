@@ -1,0 +1,48 @@
+{
+  "id": "mobile_app_section",
+  "type": "SharedSlice",
+  "name": "MobileAppSection",
+  "description": "MobileAppSection",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "title": {
+          "type": "Text",
+          "config": { "label": "Title", "placeholder": "" }
+        },
+        "description": {
+          "type": "Text",
+          "config": { "label": "Description", "placeholder": "" }
+        },
+        "image": {
+          "type": "Image",
+          "config": { "label": "Image", "constraint": {}, "thumbnails": [] }
+        }
+      },
+      "items": {
+        "card_title": {
+          "type": "Text",
+          "config": { "label": "Card title", "placeholder": "" }
+        },
+        "card_description": {
+          "type": "Text",
+          "config": { "label": "Card description", "placeholder": "" }
+        },
+        "icon": {
+          "type": "Select",
+          "config": {
+            "label": "Icon",
+            "placeholder": "",
+            "options": ["1", "2"]
+          }
+        }
+      }
+    }
+  ]
+}

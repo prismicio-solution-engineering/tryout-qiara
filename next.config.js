@@ -17,8 +17,7 @@ const nextConfig = async () => {
       localeDetection: false,
     },
     images: {
-      loader: "imgix",
-      path: "https://images.prismic.io/",
+      domains: ['images.unsplash.com']
     },
   };
 };

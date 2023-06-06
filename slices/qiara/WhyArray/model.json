@@ -1,0 +1,49 @@
+{
+  "id": "why_array",
+  "type": "SharedSlice",
+  "name": "WhyArray",
+  "description": "WhyArray",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "title": {
+          "type": "Text",
+          "config": { "label": "Title", "placeholder": "" }
+        },
+        "description": {
+          "type": "Text",
+          "config": { "label": "Description", "placeholder": "" }
+        },
+        "left_column_title": {
+          "type": "Text",
+          "config": { "label": "Left column title", "placeholder": "" }
+        },
+        "right_column_title": {
+          "type": "Text",
+          "config": { "label": "Right column title", "placeholder": "" }
+        }
+      },
+      "items": {
+        "description": {
+          "type": "Text",
+          "config": { "label": "Description", "placeholder": "" }
+        },
+        "left_or_right": {
+          "type": "Boolean",
+          "config": {
+            "label": "Left or right",
+            "placeholder_false": "Left",
+            "placeholder_true": "Right",
+            "default_value": false
+          }
+        }
+      }
+    }
+  ]
+}

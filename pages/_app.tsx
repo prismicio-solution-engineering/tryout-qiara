@@ -1,4 +1,4 @@
-import "@/styles/globals.css";
+import "@/styles/tailwind.css";
 import { PrismicPreview } from "@prismicio/next";
 import { PrismicProvider } from "@prismicio/react";
 import type { AppProps } from "next/app";

@@ -1,0 +1,36 @@
+{
+  "id": "box_section",
+  "type": "SharedSlice",
+  "name": "BoxSection",
+  "description": "BoxSection",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {},
+      "items": {
+        "title": {
+          "type": "Text",
+          "config": { "label": "Title", "placeholder": "" }
+        },
+        "description": {
+          "type": "Text",
+          "config": { "label": "Description", "placeholder": "" }
+        },
+        "icon": {
+          "type": "Select",
+          "config": {
+            "label": "Icon",
+            "placeholder": "",
+            "options": ["L", "S", "D", "E"],
+            "default_value": "L"
+          }
+        }
+      }
+    }
+  ]
+}

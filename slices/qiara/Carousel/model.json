@@ -1,0 +1,72 @@
+{
+  "id": "carousel",
+  "type": "SharedSlice",
+  "name": "Carousel",
+  "description": "Carousel",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "titre_trustpilot": {
+          "type": "Text",
+          "config": { "label": "Titre trustpilot", "placeholder": "" }
+        },
+        "note_trustpilot": {
+          "type": "Text",
+          "config": { "label": "Note trustpilot", "placeholder": "" }
+        }
+      },
+      "items": {
+        "full_name": {
+          "type": "Text",
+          "config": { "label": "Full name", "placeholder": "" }
+        },
+        "title": {
+          "type": "Text",
+          "config": { "label": "Title", "placeholder": "" }
+        },
+        "description": {
+          "type": "Text",
+          "config": { "label": "Description", "placeholder": "" }
+        }
+      }
+    },
+    {
+      "id": "withTitle",
+      "name": "WithTitle",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "title": {
+          "type": "Text",
+          "config": { "label": "Title", "placeholder": "" }
+        },
+        "description": {
+          "type": "Text",
+          "config": { "label": "Description", "placeholder": "" }
+        }
+      },
+      "items": {
+        "title": {
+          "type": "Text",
+          "config": { "label": "Title", "placeholder": "" }
+        },
+        "image": {
+          "type": "Image",
+          "config": { "label": "Image", "constraint": {}, "thumbnails": [] }
+        },
+        "link": {
+          "type": "Link",
+          "config": { "label": "Link", "placeholder": "", "select": null }
+        }
+      }
+    }
+  ]
+}
