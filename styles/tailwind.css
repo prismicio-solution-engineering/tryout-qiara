@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind screens;
+@import 'typography.css';
+@import 'scrollbar.css';
+
+@layer components {
+  .bg-purple-haze {
+    @apply bg-gradient-to-tr from-purple-haze-bl to-purple-haze-tr;
+  }
+  .bg-purple-haze-reverse {
+    @apply bg-gradient-to-tr from-purple-haze-tr to-purple-haze-bl;
+  }
+  .border-purple-haze {
+    background: linear-gradient(white, white) padding-box,
+      linear-gradient(to top right, #c57da8, #769eff) border-box;
+    border-color: transparent;
+  }
+  .border-purple-haze-reverse {
+    background: linear-gradient(white, white) padding-box,
+      linear-gradient(to top right, #769eff, #c57da8) border-box;
+  }
+  .text-purple-haze {
+    @apply text-transparent bg-clip-text bg-purple-haze;
+  }
+  .text-purple-haze-reverse {
+    @apply text-transparent bg-clip-text bg-purple-haze-reverse;
+  }
+  .drop-shadow-purple-haze-lg {
+    filter: drop-shadow(-200px 200px 113px rgba(0, 0, 0, 0.01))
+      drop-shadow(-113px 113px 95px rgba(0, 0, 0, 0.05))
+      drop-shadow(-50px 50px 71px rgba(0, 0, 0, 0.09))
+      drop-shadow(-13px 13px 39px rgba(0, 0, 0, 0.1))
+      drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.1));
+  }
+  .drop-shadow-purple-haze-lg-hover {
+    filter: drop-shadow(-200px 200px 113px rgba(0, 0, 0, 0.03))
+      drop-shadow(-113px 113px 95px rgba(0, 0, 0, 0.08))
+      drop-shadow(-50px 50px 71px rgba(0, 0, 0, 0.12))
+      drop-shadow(-13px 13px 39px rgba(0, 0, 0, 0.15))
+      drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.15));
+  }
+  .drop-shadow-purple-haze-md {
+    filter: drop-shadow(-102.857px 102.857px 58.1143px rgba(29, 29, 29, 0.01))
+      drop-shadow(-58.1143px 58.1143px 48.8571px rgba(29, 29, 29, 0.05))
+      drop-shadow(-25.7143px 25.7143px 36.5143px rgba(29, 29, 29, 0.09))
+      drop-shadow(-6.68571px 6.68571px 20.0571px rgba(29, 29, 29, 0.1))
+      drop-shadow(0px 0px 0px rgba(29, 29, 29, 0.1));
+  }
+  .drop-shadow-purple-haze-md-hover {
+    filter: drop-shadow(-102.857px 102.857px 58.1143px rgba(29, 29, 29, 0.02))
+      drop-shadow(-58.1143px 58.1143px 48.8571px rgba(29, 29, 29, 0.08))
+      drop-shadow(-25.7143px 25.7143px 36.5143px rgba(29, 29, 29, 0.12))
+      drop-shadow(-6.68571px 6.68571px 20.0571px rgba(29, 29, 29, 0.14))
+      drop-shadow(0px 0px 0px rgba(29, 29, 29, 0.15));
+  }
+  .drop-shadow-purple-haze-wrapper {
+    background: linear-gradient(
+      225deg,
+      #d9d9d9 0%,
+      rgba(217, 217, 217, 0) 100%
+    );
+  }
+}
