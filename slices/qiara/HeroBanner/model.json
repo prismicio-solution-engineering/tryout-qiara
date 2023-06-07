@@ -95,7 +95,24 @@
           }
         }
       },
-      "items": {}
+      "items": {
+        "cta_label": {
+          "type": "Text",
+          "config": { "label": "Cta label", "placeholder": "" }
+        },
+        "cta_link": {
+          "type": "Text",
+          "config": { "label": "Cta link", "placeholder": "" }
+        },
+        "cta_type": {
+          "type": "Select",
+          "config": {
+            "label": "Cta type",
+            "placeholder": "",
+            "options": ["1", "2"]
+          }
+        }
+      }
     }
   ]
 }

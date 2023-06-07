@@ -14,7 +14,6 @@
 				"type": "Text"
 			},
 			"background_image": {
-				"__TYPE__": "ImageContent",
 				"origin": {
 					"id": "main",
 					"url": "https://images.unsplash.com/photo-1504198070170-4ca53bb1c1fa",
@@ -32,6 +31,9 @@
 					},
 					"background": "transparent"
 				},
+				"credits": null,
+				"alt": null,
+				"__TYPE__": "ImageContent",
 				"thumbnails": {}
 			}
 		},
@@ -52,7 +54,6 @@
 				"type": "Text"
 			},
 			"background_image": {
-				"__TYPE__": "ImageContent",
 				"origin": {
 					"id": "main",
 					"url": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2",
@@ -70,6 +71,9 @@
 					},
 					"background": "transparent"
 				},
+				"credits": null,
+				"alt": null,
+				"__TYPE__": "ImageContent",
 				"thumbnails": {}
 			},
 			"cta_label": {
@@ -107,7 +111,6 @@
 				"type": "Text"
 			},
 			"background_image": {
-				"__TYPE__": "ImageContent",
 				"origin": {
 					"id": "main",
 					"url": "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5",
@@ -125,13 +128,41 @@
 					},
 					"background": "transparent"
 				},
+				"credits": null,
+				"alt": null,
+				"__TYPE__": "ImageContent",
 				"thumbnails": {}
 			}
 		},
 		"items": [
 			{
 				"__TYPE__": "GroupItemContent",
-				"value": []
+				"value": [
+					[
+						"cta_label",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "small",
+							"type": "Text"
+						}
+					],
+					[
+						"cta_link",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "importance",
+							"type": "Text"
+						}
+					],
+					[
+						"cta_type",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "2",
+							"type": "Select"
+						}
+					]
+				]
 			}
 		]
 	}

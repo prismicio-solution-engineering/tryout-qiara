@@ -3973,6 +3973,42 @@ interface HeroBannerSliceWithoutDescriptionPrimary {
   background_image: prismic.ImageField<never>;
 }
 /**
+ * Item in HeroBanner → Items
+ *
+ */
+export interface HeroBannerSliceWithoutDescriptionItem {
+  /**
+   * Cta label field in *HeroBanner → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: hero_banner.items[].cta_label
+   * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+   *
+   */
+  cta_label: prismic.KeyTextField;
+  /**
+   * Cta link field in *HeroBanner → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: hero_banner.items[].cta_link
+   * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+   *
+   */
+  cta_link: prismic.KeyTextField;
+  /**
+   * Cta type field in *HeroBanner → Items*
+   *
+   * - **Field Type**: Select
+   * - **Placeholder**: *None*
+   * - **API ID Path**: hero_banner.items[].cta_type
+   * - **Documentation**: https://prismic.io/docs/core-concepts/select
+   *
+   */
+  cta_type: prismic.SelectField<"1" | "2">;
+}
+/**
  * Without Description variation for HeroBanner Slice
  *
  * - **API ID**: `withoutDescription`
@@ -3983,7 +4019,7 @@ interface HeroBannerSliceWithoutDescriptionPrimary {
 export type HeroBannerSliceWithoutDescription = prismic.SharedSliceVariation<
   "withoutDescription",
   Simplify<HeroBannerSliceWithoutDescriptionPrimary>,
-  never
+  Simplify<HeroBannerSliceWithoutDescriptionItem>
 >;
 /**
  * Slice variation for *HeroBanner*
@@ -4825,6 +4861,7 @@ declare module "@prismicio/client" {
       HeroBannerSliceWithButtonPrimary,
       HeroBannerSliceWithButton,
       HeroBannerSliceWithoutDescriptionPrimary,
+      HeroBannerSliceWithoutDescriptionItem,
       HeroBannerSliceWithoutDescription,
       HeroBannerSliceVariation,
       HeroBannerSlice,
