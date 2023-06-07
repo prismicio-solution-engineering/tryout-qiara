@@ -73,5 +73,6 @@ export async function getStaticProps({
       footer,
       languages,
     },
+    revalidate: 10,
   };
 }
