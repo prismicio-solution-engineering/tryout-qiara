@@ -6,6 +6,7 @@ import { StaticImageData } from "next/image";
 import heroSrc from '@/public/assets/HeroBanner/landing-hero.webp'
 import Link from "next/link";
 import { Button } from "@/components/Qiara/buttonQiara";
+import { FilledLinkToWebField } from "@prismicio/types";
 
 export default function HeroBannerDefault({
   slice,
@@ -36,7 +37,8 @@ export default function HeroBannerDefault({
           {slice.primary.title}
         </Heading>
         {slice.variation === "withButton" && (
-          <Link className="self-center" href={slice.primary.cta_link.url}>
+          //@ts-ignore:next-line
+          <Link className="self-center" href={slice.primary.cta_link?.url}>
             <Button type="primary" color={slice.primary.cta_type === "1" ? "black" : "purple-haze"} testId="order-pack" size="large">
               {slice.primary.cta_label}
             </Button>
