@@ -3971,42 +3971,36 @@ interface HeroBannerSliceWithoutDescriptionPrimary {
    *
    */
   background_image: prismic.ImageField<never>;
-}
-/**
- * Item in HeroBanner → Items
- *
- */
-export interface HeroBannerSliceWithoutDescriptionItem {
   /**
-   * Cta label field in *HeroBanner → Items*
+   * Cta label field in *HeroBanner → Primary*
    *
    * - **Field Type**: Text
    * - **Placeholder**: *None*
-   * - **API ID Path**: hero_banner.items[].cta_label
+   * - **API ID Path**: hero_banner.primary.cta_label
    * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
    *
    */
   cta_label: prismic.KeyTextField;
   /**
-   * Cta link field in *HeroBanner → Items*
+   * Cta link field in *HeroBanner → Primary*
    *
    * - **Field Type**: Text
    * - **Placeholder**: *None*
-   * - **API ID Path**: hero_banner.items[].cta_link
+   * - **API ID Path**: hero_banner.primary.cta_link
    * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
    *
    */
   cta_link: prismic.KeyTextField;
   /**
-   * Cta type field in *HeroBanner → Items*
+   * Cta type field in *HeroBanner → Primary*
    *
-   * - **Field Type**: Select
+   * - **Field Type**: Text
    * - **Placeholder**: *None*
-   * - **API ID Path**: hero_banner.items[].cta_type
-   * - **Documentation**: https://prismic.io/docs/core-concepts/select
+   * - **API ID Path**: hero_banner.primary.cta_type
+   * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
    *
    */
-  cta_type: prismic.SelectField<"1" | "2">;
+  cta_type: prismic.KeyTextField;
 }
 /**
  * Without Description variation for HeroBanner Slice
@@ -4019,7 +4013,7 @@ export interface HeroBannerSliceWithoutDescriptionItem {
 export type HeroBannerSliceWithoutDescription = prismic.SharedSliceVariation<
   "withoutDescription",
   Simplify<HeroBannerSliceWithoutDescriptionPrimary>,
-  Simplify<HeroBannerSliceWithoutDescriptionItem>
+  never
 >;
 /**
  * Slice variation for *HeroBanner*
@@ -4861,7 +4855,6 @@ declare module "@prismicio/client" {
       HeroBannerSliceWithButtonPrimary,
       HeroBannerSliceWithButton,
       HeroBannerSliceWithoutDescriptionPrimary,
-      HeroBannerSliceWithoutDescriptionItem,
       HeroBannerSliceWithoutDescription,
       HeroBannerSliceVariation,
       HeroBannerSlice,

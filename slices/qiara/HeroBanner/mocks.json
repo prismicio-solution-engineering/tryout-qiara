@@ -132,37 +132,27 @@
 				"alt": null,
 				"__TYPE__": "ImageContent",
 				"thumbnails": {}
+			},
+			"cta_label": {
+				"__TYPE__": "FieldContent",
+				"value": "train",
+				"type": "Text"
+			},
+			"cta_link": {
+				"__TYPE__": "FieldContent",
+				"value": "bow",
+				"type": "Text"
+			},
+			"cta_type": {
+				"__TYPE__": "FieldContent",
+				"value": "attention",
+				"type": "Text"
 			}
 		},
 		"items": [
 			{
 				"__TYPE__": "GroupItemContent",
-				"value": [
-					[
-						"cta_label",
-						{
-							"__TYPE__": "FieldContent",
-							"value": "small",
-							"type": "Text"
-						}
-					],
-					[
-						"cta_link",
-						{
-							"__TYPE__": "FieldContent",
-							"value": "importance",
-							"type": "Text"
-						}
-					],
-					[
-						"cta_type",
-						{
-							"__TYPE__": "FieldContent",
-							"value": "2",
-							"type": "Select"
-						}
-					]
-				]
+				"value": []
 			}
 		]
 	}
