@@ -1,0 +1,27 @@
+{
+  "id": "products",
+  "label": "Products",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "uid": { "type": "UID", "config": { "label": "uid", "placeholder": "" } },
+      "image": {
+        "type": "Image",
+        "config": { "label": "Image", "constraint": {}, "thumbnails": [] }
+      },
+      "title": {
+        "type": "Text",
+        "config": { "label": "Title", "placeholder": "" }
+      },
+      "description": {
+        "type": "Text",
+        "config": { "label": "Description", "placeholder": "" }
+      },
+      "link": {
+        "type": "Text",
+        "config": { "label": "Link", "placeholder": "" }
+      }
+    }
+  }
+}

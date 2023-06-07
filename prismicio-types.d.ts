@@ -969,6 +969,68 @@ export type LandingPageDocument<Lang extends string = string> =
     "landing_page",
     Lang
   >;
+/** Content for Products documents */
+interface ProductsDocumentData {
+  /**
+   * Image field in *Products*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: products.image
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/core-concepts/image
+   *
+   */
+  image: prismic.ImageField<never>;
+  /**
+   * Title field in *Products*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: products.title
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+   *
+   */
+  title: prismic.KeyTextField;
+  /**
+   * Description field in *Products*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: products.description
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+   *
+   */
+  description: prismic.KeyTextField;
+  /**
+   * Link field in *Products*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: products.link
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+   *
+   */
+  link: prismic.KeyTextField;
+}
+/**
+ * Products document from Prismic
+ *
+ * - **API ID**: `products`
+ * - **Repeatable**: `false`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/custom-types
+ *
+ * @typeParam Lang - Language API ID of the document.
+ */
+export type ProductsDocument<Lang extends string = string> =
+  prismic.PrismicDocumentWithUID<
+    Simplify<ProductsDocumentData>,
+    "products",
+    Lang
+  >;
 export type AllDocumentTypes =
   | AuthorDocument
   | BlogArticleDocument
@@ -977,7 +1039,8 @@ export type AllDocumentTypes =
   | FooterDocument
   | HeaderDocument
   | HomePageDocument
-  | LandingPageDocument;
+  | LandingPageDocument
+  | ProductsDocument;
 /**
  * Primary content in ArticleList → Primary
  *
@@ -4404,12 +4467,108 @@ export type SalesPitchSectionSliceWithoutBox = prismic.SharedSliceVariation<
   never
 >;
 /**
+ * Primary content in SalesPitchSection → Primary
+ *
+ */
+interface SalesPitchSectionSliceWithVideoPrimary {
+  /**
+   * Title field in *SalesPitchSection → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: sales_pitch_section.primary.title
+   * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+   *
+   */
+  title: prismic.KeyTextField;
+  /**
+   * Description field in *SalesPitchSection → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: sales_pitch_section.primary.description
+   * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+   *
+   */
+  description: prismic.KeyTextField;
+  /**
+   * Video link field in *SalesPitchSection → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: sales_pitch_section.primary.video_link
+   * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+   *
+   */
+  video_link: prismic.KeyTextField;
+  /**
+   * Caption field in *SalesPitchSection → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: sales_pitch_section.primary.caption
+   * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+   *
+   */
+  caption: prismic.KeyTextField;
+}
+/**
+ * Item in SalesPitchSection → Items
+ *
+ */
+export interface SalesPitchSectionSliceWithVideoItem {
+  /**
+   * Icon field in *SalesPitchSection → Items*
+   *
+   * - **Field Type**: Color
+   * - **Placeholder**: *None*
+   * - **API ID Path**: sales_pitch_section.items[].icon
+   * - **Documentation**: https://prismic.io/docs/core-concepts/color
+   *
+   */
+  icon: prismic.ColorField;
+  /**
+   * Title field in *SalesPitchSection → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: sales_pitch_section.items[].title
+   * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+   *
+   */
+  title: prismic.KeyTextField;
+  /**
+   * Description field in *SalesPitchSection → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: sales_pitch_section.items[].description
+   * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+   *
+   */
+  description: prismic.KeyTextField;
+}
+/**
+ * WithVideo variation for SalesPitchSection Slice
+ *
+ * - **API ID**: `withVideo`
+ * - **Description**: `Default`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type SalesPitchSectionSliceWithVideo = prismic.SharedSliceVariation<
+  "withVideo",
+  Simplify<SalesPitchSectionSliceWithVideoPrimary>,
+  Simplify<SalesPitchSectionSliceWithVideoItem>
+>;
+/**
  * Slice variation for *SalesPitchSection*
  *
  */
 type SalesPitchSectionSliceVariation =
   | SalesPitchSectionSliceDefault
-  | SalesPitchSectionSliceWithoutBox;
+  | SalesPitchSectionSliceWithoutBox
+  | SalesPitchSectionSliceWithVideo;
 /**
  * SalesPitchSection Shared Slice
  *
@@ -4723,6 +4882,8 @@ declare module "@prismicio/client" {
       LandingPageDocumentDataSlicesSlice,
       LandingPageDocumentDataSocialCardsItem,
       LandingPageDocument,
+      ProductsDocumentData,
+      ProductsDocument,
       AllDocumentTypes,
       ArticleListSliceHorizontalListPrimary,
       ArticleListSliceHorizontalListItem,
@@ -4873,6 +5034,9 @@ declare module "@prismicio/client" {
       SalesPitchSectionSliceDefault,
       SalesPitchSectionSliceWithoutBoxPrimary,
       SalesPitchSectionSliceWithoutBox,
+      SalesPitchSectionSliceWithVideoPrimary,
+      SalesPitchSectionSliceWithVideoItem,
+      SalesPitchSectionSliceWithVideo,
       SalesPitchSectionSliceVariation,
       SalesPitchSectionSlice,
       TileSectionSliceDefaultPrimary,

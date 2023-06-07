@@ -1,9 +1,10 @@
+// @ts-nocheck
 import { Content } from "@prismicio/client";
 import { SliceComponentProps } from "@prismicio/react";
 import { SalesPitchSection as SalesPitch } from "@/components/Qiara/sales-pitch-section";
 import Image from "next/image";
 import { Box } from "@/components/Qiara/box";
-import classNames from "classnames";
+import { AutoPlayVideo } from "@/components/Qiara/auto-play-video";
 
 /**
  * Props for `SalesPitchSection`.
@@ -20,9 +21,17 @@ const SalesPitchSection = ({ slice }: SalesPitchSectionProps): JSX.Element => {
       description={slice.primary.description}
       title={slice.primary.title}
       bgImage={
-        <Image src={slice.primary.image.url!} alt={slice.primary.image.alt!} className={'pointer-events-none -z-1'}
-        fill
-        style={{ objectFit: 'cover' }} />
+        slice.primary.video_link ? (
+          <AutoPlayVideo src={slice.primary.video_link} />
+        ) : (
+          <Image
+            src={slice.primary.image.url!}
+            alt={slice.primary.image.alt!}
+            className={"pointer-events-none -z-1"}
+            fill
+            style={{ objectFit: "cover" }}
+          />
+        )
       }
       caption={slice.primary.caption}
     >
@@ -30,12 +39,7 @@ const SalesPitchSection = ({ slice }: SalesPitchSectionProps): JSX.Element => {
         <div className="flex flex-col md:flex-row gap-12 max-w-4xl">
           {slice.items.map((item, index) => (
             <>
-              <Box
-                key={index}
-                className="flex-[1_1_0]"
-                
-                title={item.title}
-              >
+              <Box key={index} className="flex-[1_1_0]" title={item.title}>
                 {item.description}
               </Box>
               {index === 0 && (

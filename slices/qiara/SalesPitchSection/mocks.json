@@ -1,56 +1,6 @@
 [
 	{
 		"__TYPE__": "SharedSliceContent",
-		"variation": "withoutBox",
-		"primary": {
-			"title": {
-				"__TYPE__": "FieldContent",
-				"type": "Text",
-				"value": "Une installation en toute autonomie."
-			},
-			"description": {
-				"__TYPE__": "FieldContent",
-				"type": "Text",
-				"value": "Notre service client est à votre disposition pour vous permettre d'installer en toute simplicité votre système, et à tout moment si vous avez des questions."
-			},
-			"image": {
-				"origin": {
-					"id": "main",
-					"url": "https://images.unsplash.com/photo-1515378960530-7c0da6231fb1",
-					"width": 5616,
-					"height": 3744
-				},
-				"url": "https://images.unsplash.com/photo-1515378960530-7c0da6231fb1",
-				"width": 5616,
-				"height": 3744,
-				"edit": {
-					"zoom": 1,
-					"crop": {
-						"x": 0,
-						"y": 0
-					},
-					"background": "transparent"
-				},
-				"credits": null,
-				"alt": null,
-				"__TYPE__": "ImageContent",
-				"thumbnails": {}
-			},
-			"caption": {
-				"__TYPE__": "FieldContent",
-				"type": "Text",
-				"value": "Nos produits ont été conçus pour être installés très simplement sans outil et en toute autonomie. Plus besoin de l’intervention contraignante d’un professionnel."
-			}
-		},
-		"items": [
-			{
-				"__TYPE__": "GroupItemContent",
-				"value": []
-			}
-		]
-	},
-	{
-		"__TYPE__": "SharedSliceContent",
 		"variation": "default",
 		"primary": {
 			"title": {
@@ -139,6 +89,113 @@
 							"__TYPE__": "FieldContent",
 							"type": "Text",
 							"value": "Parce que nous développons nous-mêmes notre système et nos produits, nous les faisons évoluer et assurons une maintenance en continu pour vous offrir un système toujours à la pointe."
+						}
+					]
+				]
+			}
+		]
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "withoutBox",
+		"primary": {
+			"title": {
+				"__TYPE__": "FieldContent",
+				"type": "Text",
+				"value": "Une installation en toute autonomie."
+			},
+			"description": {
+				"__TYPE__": "FieldContent",
+				"type": "Text",
+				"value": "Notre service client est à votre disposition pour vous permettre d'installer en toute simplicité votre système, et à tout moment si vous avez des questions."
+			},
+			"image": {
+				"origin": {
+					"id": "main",
+					"url": "https://images.unsplash.com/photo-1515378960530-7c0da6231fb1",
+					"width": 5616,
+					"height": 3744
+				},
+				"url": "https://images.unsplash.com/photo-1515378960530-7c0da6231fb1",
+				"width": 5616,
+				"height": 3744,
+				"edit": {
+					"zoom": 1,
+					"crop": {
+						"x": 0,
+						"y": 0
+					},
+					"background": "transparent"
+				},
+				"credits": null,
+				"alt": null,
+				"__TYPE__": "ImageContent",
+				"thumbnails": {}
+			},
+			"caption": {
+				"__TYPE__": "FieldContent",
+				"type": "Text",
+				"value": "Nos produits ont été conçus pour être installés très simplement sans outil et en toute autonomie. Plus besoin de l’intervention contraignante d’un professionnel."
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": []
+			}
+		]
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "withVideo",
+		"primary": {
+			"title": {
+				"__TYPE__": "FieldContent",
+				"value": "want",
+				"type": "Text"
+			},
+			"description": {
+				"__TYPE__": "FieldContent",
+				"value": "vessels",
+				"type": "Text"
+			},
+			"video_link": {
+				"__TYPE__": "FieldContent",
+				"value": "may",
+				"type": "Text"
+			},
+			"caption": {
+				"__TYPE__": "FieldContent",
+				"value": "suppose",
+				"type": "Text"
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"icon",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "#cb3be7",
+							"type": "Color"
+						}
+					],
+					[
+						"title",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "step",
+							"type": "Text"
+						}
+					],
+					[
+						"description",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "cut",
+							"type": "Text"
 						}
 					]
 				]

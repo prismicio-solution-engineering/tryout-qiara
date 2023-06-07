@@ -70,6 +70,46 @@
         }
       },
       "items": {}
+    },
+    {
+      "id": "withVideo",
+      "name": "WithVideo",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "title": {
+          "type": "Text",
+          "config": { "label": "Title", "placeholder": "" }
+        },
+        "description": {
+          "type": "Text",
+          "config": { "label": "Description", "placeholder": "" }
+        },
+        "video_link": {
+          "type": "Text",
+          "config": { "label": "Video link", "placeholder": "" }
+        },
+        "caption": {
+          "type": "Text",
+          "config": { "label": "Caption", "placeholder": "" }
+        }
+      },
+      "items": {
+        "icon": {
+          "type": "Color",
+          "config": { "label": "Icon", "placeholder": "" }
+        },
+        "title": {
+          "type": "Text",
+          "config": { "label": "Title", "placeholder": "" }
+        },
+        "description": {
+          "type": "Text",
+          "config": { "label": "Description", "placeholder": "" }
+        }
+      }
     }
   ]
 }
