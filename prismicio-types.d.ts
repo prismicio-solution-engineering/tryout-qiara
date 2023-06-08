@@ -3673,16 +3673,15 @@ export interface BoxSectionSliceDefaultItem {
    */
   description: prismic.KeyTextField;
   /**
-   * Icon field in *BoxSection → Items*
+   * icon field in *BoxSection → Items*
    *
-   * - **Field Type**: Select
+   * - **Field Type**: Image
    * - **Placeholder**: *None*
-   * - **Default Value**: L
    * - **API ID Path**: box_section.items[].icon
-   * - **Documentation**: https://prismic.io/docs/core-concepts/select
+   * - **Documentation**: https://prismic.io/docs/core-concepts/image
    *
    */
-  icon: prismic.SelectField<"L" | "S" | "D" | "E", "filled">;
+  icon: prismic.ImageField<never>;
 }
 /**
  * Default variation for BoxSection Slice
@@ -4518,16 +4517,6 @@ interface SalesPitchSectionSliceWithVideoPrimary {
  */
 export interface SalesPitchSectionSliceWithVideoItem {
   /**
-   * Icon field in *SalesPitchSection → Items*
-   *
-   * - **Field Type**: Color
-   * - **Placeholder**: *None*
-   * - **API ID Path**: sales_pitch_section.items[].icon
-   * - **Documentation**: https://prismic.io/docs/core-concepts/color
-   *
-   */
-  icon: prismic.ColorField;
-  /**
    * Title field in *SalesPitchSection → Items*
    *
    * - **Field Type**: Text
@@ -4547,6 +4536,16 @@ export interface SalesPitchSectionSliceWithVideoItem {
    *
    */
   description: prismic.KeyTextField;
+  /**
+   * icon field in *SalesPitchSection → Items*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: sales_pitch_section.items[].icon
+   * - **Documentation**: https://prismic.io/docs/core-concepts/image
+   *
+   */
+  icon: prismic.ImageField<never>;
 }
 /**
  * WithVideo variation for SalesPitchSection Slice

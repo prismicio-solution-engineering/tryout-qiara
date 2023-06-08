@@ -22,13 +22,8 @@
           "config": { "label": "Description", "placeholder": "" }
         },
         "icon": {
-          "type": "Select",
-          "config": {
-            "label": "Icon",
-            "placeholder": "",
-            "options": ["L", "S", "D", "E"],
-            "default_value": "L"
-          }
+          "type": "Image",
+          "config": { "label": "icon", "constraint": {}, "thumbnails": [] }
         }
       }
     }

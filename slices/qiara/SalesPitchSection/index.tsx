@@ -5,6 +5,7 @@ import { SalesPitchSection as SalesPitch } from "@/components/Qiara/sales-pitch-
 import Image from "next/image";
 import { Box } from "@/components/Qiara/box";
 import { AutoPlayVideo } from "@/components/Qiara/auto-play-video";
+import { Icon } from "@/components/Icon";
 
 /**
  * Props for `SalesPitchSection`.
@@ -35,20 +36,30 @@ const SalesPitchSection = ({ slice }: SalesPitchSectionProps): JSX.Element => {
       }
       caption={slice.primary.caption}
     >
-      {slice.variation === "default" && (
-        <div className="flex flex-col md:flex-row gap-12 max-w-4xl">
-          {slice.items.map((item, index) => (
-            <>
-              <Box key={index} className="flex-[1_1_0]" title={item.title}>
-                {item.description}
-              </Box>
-              {index === 0 && (
-                <div className="hidden md:flex w-0 border-l border-neutral-300" />
-              )}
-            </>
-          ))}
-        </div>
-      )}
+      {slice.variation === "default" ||
+        (slice.variation === "withVideo" && (
+          <div className="flex flex-col md:flex-row gap-12 max-w-4xl">
+            {slice.items.map((item, index) => (
+              <>
+                <Box
+                  key={index}
+                  className="flex-[1_1_0]"
+                  title={item.title}
+                  icon={
+                    <Icon
+                      field={item.icon}
+                    />
+                  }
+                >
+                  {item.description}
+                </Box>
+                {index === 0 && (
+                  <div className="hidden md:flex w-0 border-l border-neutral-300" />
+                )}
+              </>
+            ))}
+          </div>
+        ))}
     </SalesPitch>
   );
 };

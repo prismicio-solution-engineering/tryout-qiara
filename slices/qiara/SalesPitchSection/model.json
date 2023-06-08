@@ -97,10 +97,6 @@
         }
       },
       "items": {
-        "icon": {
-          "type": "Color",
-          "config": { "label": "Icon", "placeholder": "" }
-        },
         "title": {
           "type": "Text",
           "config": { "label": "Title", "placeholder": "" }
@@ -108,6 +104,10 @@
         "description": {
           "type": "Text",
           "config": { "label": "Description", "placeholder": "" }
+        },
+        "icon": {
+          "type": "Image",
+          "config": { "label": "icon", "constraint": {}, "thumbnails": [] }
         }
       }
     }
