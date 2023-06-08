@@ -20,7 +20,7 @@ const BoxSection = ({ slice }: BoxSectionProps): JSX.Element => {
         return (
           <Box
             key={title}
-            {...(icon && { icon: <Icon field={item.icon} /> })}
+            {...(icon && { icon: <Icon field={icon} /> })}
             title={title}
             className="relative lg:[&:not(:last-child)]:after:absolute after:block lg:after:-right-12 after:top-0 after:bottom-0 after:border-l after:border-solid before:border-neutral-500"
           >
