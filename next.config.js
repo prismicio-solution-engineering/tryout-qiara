@@ -17,9 +17,9 @@ const nextConfig = async () => {
       localeDetection: false,
     },
     images: {
-      domains: ['images.unsplash.com', 'images.prismic.io']
+      domains: ["images.unsplash.com", "images.prismic.io", "cdn.prismic.io"]
     },
-  };
+  }
 };
 
 module.exports = nextConfig;
